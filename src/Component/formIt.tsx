@@ -24,12 +24,13 @@ const formIt = () => {
             if (val) {
    
                     if (value === 1) {
-                        count.push(val);
+                        getStepsByVal(val-1);
+                        count.push(val-1);
                     }
                     if (val > 2) {
                        
-                            count.push((val));
-                            getStepsByVal(val);
+                            count.push((val-2));
+                            getStepsByVal(val-2);
                       
                     }
            
